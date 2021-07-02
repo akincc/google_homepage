@@ -1,7 +1,10 @@
-ul {
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
     list-style-type: none;
     /* list-style-type:none removes the bullet points from the list  */
-    margin: 0;
+    margin: 0 6px;
     padding: 0;
     /* margin and padding set to 0 in order to remove the default
     settings of browser  */
@@ -11,26 +14,99 @@ ul {
     background-color: #ffffff;
     /* background-color is added to the ul element to create a full-width
     background color along the page. (works with "overflow:hidden" property */
+     
 }
 
 /* float:left (in the li element below) gets block elements to float next to each other */
-li {
-    float: left;      
+header ul li {
+    float: left;
+    background-color: rgb(255, 255, 255);  
 }
 
-li a {
+header ul li a {
     font-family: arial, sans-serif;
-    font-size: 14px;
     display: block;
-    padding: 5px;
-    margin: 5px 10px;
+    padding: 0 0;
+    margin: 0 10px;
     text-decoration: none;
     /* text-decoration:none added to remove the default
     appearence (i.e underline) of the links (a elements) */
-    color: #222222;
     text-align: center;
+
 }
 
-li a:hover {
+header ul li a:hover {
     text-decoration: underline;
+
+}
+
+.navright a {
+    font-size: 13px;
+    color: rgba(0,0,0,0.87);
+}
+
+.navleft a {
+    font-size: 14px;
+    color: #222222;
+}
+
+.ppborder {
+    border-width: 4px;
+    border-color: rgba(255, 255, 255);
+    border-style: solid;    
+}
+
+.ppborder:hover {
+    border-color: rgba(60,64,67,0.08);
+}
+
+.appsborder {
+    border-width: 8px;
+    border-color: rgba(255, 255, 255);
+    background-color: white;
+    border-style: solid;
+    border-radius: 50%;    
+}
+
+.appsborder:hover {
+    border-color: #eff0f0;
+    background-color: rgba(60,64,67,0.08);
+}
+
+.googlelogocontainer {
+    background-color: white;
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+
+.searchfield {
+    height: 34px;
+    min-width: 487px;
+}
+
+.buttonsbelow {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: white;
+    padding: 0px 16px;
+    margin: 11px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    height: 36px;
+    min-width: 54px;
+    color: #3c4043;
+    cursor:pointer;
+}
+
+.buttonsbelow:hover {
+    border: 1px solid #dadce0;
+    color: #202124;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
 }
