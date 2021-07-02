@@ -1,0 +1,36 @@
+ul {
+    list-style-type: none;
+    /* list-style-type:none removes the bullet points from the list  */
+    margin: 0;
+    padding: 0;
+    /* margin and padding set to 0 in order to remove the default
+    settings of browser  */
+    overflow: hidden;
+    /* overflow:hidden is added to the ul element to prevent li
+    elements from going outside of the list. */
+    background-color: #ffffff;
+    /* background-color is added to the ul element to create a full-width
+    background color along the page. (works with "overflow:hidden" property */
+}
+
+/* float:left (in the li element below) gets block elements to float next to each other */
+li {
+    float: left;      
+}
+
+li a {
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    display: block;
+    padding: 5px;
+    margin: 5px 10px;
+    text-decoration: none;
+    /* text-decoration:none added to remove the default
+    appearence (i.e underline) of the links (a elements) */
+    color: #222222;
+    text-align: center;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
