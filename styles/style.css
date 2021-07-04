@@ -1,10 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.fixed-header, .fixed-footer {
+    position: fixed;
+    width: 100%;
+}
+
+.fixed-header {
+    top: 0;
+}
+
+.fixed-footer {
+    bottom: 0;
+}
+
+header {
+    margin: 0;
+    padding: 6px;
+}
+
 header ul {
     display: flex;
     align-items: center;
     justify-content: space-between ;
     list-style-type: none;
     /* list-style-type:none removes the bullet points from the list  */
-    margin: 0 6px;
+    margin: 0;
     padding: 0;
     /* margin and padding set to 0 in order to remove the default
     settings of browser  */
@@ -20,14 +43,16 @@ header ul {
 /* float:left (in the li element below) gets block elements to float next to each other */
 header ul li {
     float: left;
-    background-color: rgb(255, 255, 255);  
+    background-color: rgb(255, 255, 255);
+    margin: 0 5px;
+    padding: 5px  
 }
 
 header ul li a {
     font-family: arial, sans-serif;
     display: block;
-    padding: 0 0;
-    margin: 0 10px;
+    padding: 0;
+    margin: 0;
     text-decoration: none;
     /* text-decoration:none added to remove the default
     appearence (i.e underline) of the links (a elements) */
@@ -73,10 +98,10 @@ header ul li a:hover {
     background-color: rgba(60,64,67,0.08);
 }
 
-.googlelogocontainer {
+.googlecontainer {
     background-color: white;
-    height: 88vh;
     display: flex;
+    min-height: 83vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;    
@@ -84,8 +109,20 @@ header ul li a:hover {
 
 
 .searchfield {
-    height: 34px;
-    min-width: 487px;
+    height: 46px;
+    min-width: 584px;
+    border-radius: 24px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dfe1e5;
+
+}
+
+.searchfield:hover {
+    border-color: rgba(223,225,229,0);
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
 }
 
 .buttonsbelow {
@@ -109,4 +146,40 @@ header ul li a:hover {
     border: 1px solid #dadce0;
     color: #202124;
     box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: rgba(0,0,0,.54);
+
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;   
+}
+
+
+footer ul li {
+    float: left;
+    padding: 15px 15px;
+    font-size: 14px;
+    text-align: center;  
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: rgba(0,0,0,.54);
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
 }

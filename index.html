@@ -6,7 +6,7 @@
         <link href="styles/style.css" rel="stylesheet">
     </head>
     <body>
-            <header>
+            <header class="fixed-header">
                 <ul>
                     <div class="navleft">
                     <li><a href="">About</a></li>
@@ -21,13 +21,15 @@
                 </ul>                                          
             </header>
 
-            <section class="googlelogocontainer">
+            <section class="googlecontainer">
                 <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-                    <div style="display:flex;align-items:center;flex-direction:column;">
-                        <div style="padding:20px 0;">    
-                            <input class="searchfield" type="search">
+                    <div style="display:flex;flex-direction:column;align-items:center;padding:20px 0;">
+                        <div style="display:flex;justify-content:space-evenly;align-items:center;" class="searchfield">    
+                            <div><img style="height:20px;width:20px" src="images/search.png"></div>
+                            <div><input style="min-width:487px;height:34px;border:none;outline:none;font-size:16px;" type="search"></div>
+                            <div><img style="height:24px;width:24px;cursor:pointer;" src="images/voice-search.png"></div>
                         </div>
-                        <div>
+                        <div style="padding:18px">
                             <a href=""><button class="buttonsbelow">Google Search</button></a>
                             <button class="buttonsbelow">I'm Feeling Lucky</button>
                         </div>
@@ -35,8 +37,29 @@
             </section>
 
 
-            <footer>
-                <p>akin</p>
+            <footer class="fixed-footer">
+                <div style="border-bottom:1px solid #dadce0;font-size:15px;padding:15px 30px;">United Kingdom</div>
+            <div style="display: flex;justify-content:space-between;padding:0 15px;">
+                <div>
+                    <ul>
+                        <li><a href="">Advertising</a></li>
+                        <li><a href="">Business</a></li>
+                        <li><a href="">How Search works</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>                        
+                        <li><img style="width:12.25px;height:14px;" src="images/carbon-neutral.png"><a href=""> Carbon neutral since 2007</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="">Privacy</a></li>
+                        <li><a href="">Terms</a></li>
+                        <li><a href="">Settings</a></li>
+                    </ul>
+                </div>
+            </div>    
             </footer>
     </body>
 </html>
